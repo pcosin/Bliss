@@ -1,5 +1,6 @@
-@import "nosotros";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+@import "nosotros";
+@import "contacto";
 
 /* ------------------- */
 /* Custom properties   */
@@ -83,6 +84,11 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
@@ -124,6 +130,10 @@ select {
   padding: 0.5rem;
 }
 
+.navbar-border-bottom {
+  border-bottom: 2px solid var(--color-wood_5);
+}
+
 .navbar-collapse {
   background-color: transparent !important;
 }
@@ -133,7 +143,7 @@ select {
   font-weight: 300;
   color: var(--color-wood_5) !important;
   letter-spacing: 4px;
-  padding-right: 3rem;
+  padding: 0.5rem 2.5rem;
 }
 
 .navbar-light .navbar-nav .active {
@@ -206,24 +216,29 @@ button {
 
 //// Footer ////
 
+footer {
+  padding: 2rem 2rem 0 2rem;
+}
+
 .footer_inner h3 {
   color: #fff;
   font-size: var(--text-medium);
+}
+
+.h3_footer_left {
+  text-align: center;
   padding: 1rem;
 }
 
-footer {
-  padding: 2rem;
+.h3_footer_rigth {
+  padding: 1rem 0;
 }
 
-footer p {
+.direccion {
   color: white;
   font-size: var(--text-regular);
   text-align: center;
-}
-
-.h3_footer {
-  text-align: center;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .footer_left {
@@ -231,15 +246,15 @@ footer p {
   display: flex;
 }
 
-.footer_rigth {
-  width: 100%;
-}
-
 i {
   color: #fff;
   margin-right: 0.7rem;
   vertical-align: middle;
   display: inline-block;
+}
+
+.icono-texto {
+  margin: 0 auto;
 }
 
 //// Media Querys ////
@@ -250,5 +265,13 @@ i {
   }
   .flex {
     flex-direction: column;
+  }
+
+  .info-img-2 .flex {
+    flex-direction: column-reverse;
+  }
+
+  .img-side {
+    padding-top: 2rem;
   }
 }
