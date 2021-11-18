@@ -49,19 +49,68 @@ input[type="number"] {
   opacity: 1;
 }
 
+.form-label {
+  color: var(--color-wood_5);
+}
+
+#mensaje {
+  min-height: 15rem;
+}
+
 .contactButton {
   display: block;
   text-align: center;
   background-color: var(--colorBotones);
-  color: #fff;
+  color: var(--color-wood_5);
   text-align: center;
-  border-radius: 30px 5px 30px 5px;
-  padding: 0.3rem 3.5rem;
+  border-radius: 5px;
+  padding: 0.3rem 5rem;
   margin: 1rem auto 0;
   font-size: 1.5rem;
   font-weight: 500;
-  border: none;
+  border-color: 3px solid var(--color-wood_5);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.bodegas_inner {
+  position: relative;
+}
+
+.bodegas_wrap p {
+  color: var(--color-wood_5);
+  font-size: var(--text-regular);
+  padding: 1rem;
+}
+
+.bodegas_inner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+}
+
+.bodegas_cuyanas {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodegas_topLine {
+  border-top: 3px solid var(--color-wood_5);
+  padding-block: 2rem;
+}
+
+.catalogo p {
+  color: var(--color-wood_5);
+  padding-block: 1rem;
 }
 
 /* ------------------- */
@@ -218,6 +267,17 @@ select {
   font-weight: 600;
 }
 
+.btn_home {
+  z-index: 100;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background-color: #fff;
+  color: var(--color-wood_5);
+  border: none;
+  font-size: clamp(1rem, var(--text-buttons), 2rem);
+}
+
 .side-text {
   width: 100%;
 }
@@ -283,6 +343,13 @@ footer {
   padding: 2rem 2rem 0 2rem;
 }
 
+.flex-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
 .footer_inner h3 {
   color: #fff;
   font-size: var(--text-medium);
@@ -290,7 +357,7 @@ footer {
 
 .h3_footer_left {
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .h3_footer_rigth {
@@ -314,6 +381,7 @@ footer {
 i {
   color: #fff;
   margin-right: 0.7rem;
+  margin-left: 0.7rem;
   vertical-align: middle;
   display: inline-block;
 }
@@ -340,6 +408,12 @@ i {
   }
   .img-side {
     padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .direccion {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,35 @@
+.bodegas_inner {
+  position: relative;
+}
+
+.bodegas_wrap {
+  p {
+    color: var(--color-wood_5);
+    font-size: var(--text-regular);
+    padding: 1rem;
+  }
+}
+
+.bodegas_inner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+}
+
+.bodegas_cuyanas {
+  justify-content: center;
+  align-items: center;
+}
+
+.bodegas_topLine {
+  border-top: 3px solid var(--color-wood_5);
+  padding-block: 2rem;
+}
+
+.catalogo p {
+  color: var(--color-wood_5);
+  padding-block: 1rem;
+}

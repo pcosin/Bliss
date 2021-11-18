@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
 @import "nosotros";
 @import "contacto";
+@import "productos";
 
 /* ------------------- */
 /* Custom properties   */
@@ -151,6 +152,19 @@ select {
   font-weight: 600;
 }
 
+//// Home ////
+
+.btn_home {
+  z-index: 100;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background-color: #fff;
+  color: var(--color-wood_5);
+  border: none;
+  font-size: clamp(1rem, var(--text-buttons), 2rem);
+}
+
 //// Sections text and img ////
 
 .side-text {
@@ -220,6 +234,11 @@ footer {
   padding: 2rem 2rem 0 2rem;
 }
 
+.flex-footer {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
 .footer_inner h3 {
   color: #fff;
   font-size: var(--text-medium);
@@ -227,7 +246,7 @@ footer {
 
 .h3_footer_left {
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .h3_footer_rigth {
@@ -249,6 +268,7 @@ footer {
 i {
   color: #fff;
   margin-right: 0.7rem;
+  margin-left: 0.7rem;
   vertical-align: middle;
   display: inline-block;
 }
@@ -273,5 +293,11 @@ i {
 
   .img-side {
     padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .direccion {
+    font-size: 0.8rem;
   }
 }
