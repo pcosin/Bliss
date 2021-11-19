@@ -6,6 +6,24 @@
   padding: 1.5rem 0 3rem 0;
 }
 
+.flex-nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -267,6 +285,12 @@ select {
   font-weight: 600;
 }
 
+.navbar > .container-fluid {
+  width: 100%;
+  margin-right: 0;
+  float: right;
+}
+
 .btn_home {
   z-index: 100;
   position: absolute;
@@ -275,7 +299,7 @@ select {
   background-color: #fff;
   color: var(--color-wood_5);
   border: none;
-  font-size: clamp(1rem, var(--text-buttons), 2rem);
+  font-size: clamp(1rem, 5vw, 1.875rem);
 }
 
 .side-text {

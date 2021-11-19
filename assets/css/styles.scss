@@ -152,6 +152,12 @@ select {
   font-weight: 600;
 }
 
+.navbar > .container-fluid {
+  width: 100%;
+  margin-right: 0;
+  float: right;
+}
+
 //// Home ////
 
 .btn_home {
@@ -162,7 +168,7 @@ select {
   background-color: #fff;
   color: var(--color-wood_5);
   border: none;
-  font-size: clamp(1rem, var(--text-buttons), 2rem);
+  font-size: clamp(1rem, 5vw, 1.875rem);
 }
 
 //// Sections text and img ////
