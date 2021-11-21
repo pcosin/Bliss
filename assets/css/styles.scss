@@ -88,6 +88,7 @@ select {
 .flex-column {
   display: flex;
   flex-direction: column;
+  gap: var(--gap, 1rem);
 }
 
 .grid {
@@ -118,10 +119,21 @@ select {
   background-color: var(--color-wood_4);
 }
 
+//// Buttons ////
+
+button {
+  background-color: inherit;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-size: var(--text-buttons);
+}
+
 //// NavBar ////
 
 .img-logo {
   margin: auto;
+  padding-top: 1rem;
 }
 
 .navbar-nav {
@@ -152,6 +164,11 @@ select {
   font-weight: 600;
 }
 
+.nav-link:hover {
+  text-decoration: underline var(--color-wood_5) !important;
+  font-weight: 700 !important;
+}
+
 .navbar > .container-fluid {
   width: 100%;
   margin-right: 0;
@@ -169,6 +186,12 @@ select {
   color: var(--color-wood_5);
   border: none;
   font-size: clamp(1rem, 5vw, 1.875rem);
+}
+
+.btn_home:hover {
+  font-weight: 800;
+  background-color: var(--color-wood_3);
+  transition: all 2s ease;
 }
 
 //// Sections text and img ////
@@ -216,22 +239,26 @@ select {
   margin-inline: auto;
   display: block;
   margin-top: 2rem;
+  color: var(--color-wood_5);
+  border: 3px solid var(--color-wood_5);
+}
+
+.boton_productos:hover {
+  font-weight: 800;
+  transition: 0.8s linear 0.2s;
 }
 
 .boton_conocenos {
   margin-inline: auto;
   display: block;
   margin-top: 2rem;
+  color: var(--color-wood_5);
+  border: 3px solid var(--color-wood_5);
 }
 
-//// Buttons ////
-
-button {
-  background-color: inherit;
-  padding: 0.8rem 1.2rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  font-size: var(--text-buttons);
+.boton_conocenos:hover {
+  font-weight: 800;
+  transition: 0.8s linear 0.2s;
 }
 
 //// Footer ////

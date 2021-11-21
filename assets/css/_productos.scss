@@ -21,7 +21,7 @@
 
 .bodegas_cuyanas {
   justify-content: center;
-  align-items: center;
+  align-items: self-start;
 }
 
 .bodegas_topLine {
@@ -32,4 +32,15 @@
 .catalogo p {
   color: var(--color-wood_5);
   padding-block: 1rem;
+}
+
+.btn-catalogo {
+  color: var(--color-wood_5);
+  border: none;
+}
+
+.btn-catalogo:hover {
+  font-weight: 800;
+  background-color: var(--color-wood_3);
+  transition: all 2s ease;
 }
