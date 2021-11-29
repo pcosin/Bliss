@@ -9,6 +9,10 @@
   display: flex;
 }
 
+.text-center {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .flex-nosotros {
     display: flex;
