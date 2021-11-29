@@ -490,3 +490,11 @@ i {
   }
 }
 /*# sourceMappingURL=styles.css.map */
+
+.valido input{
+  border-color: greenyellow;
+}
+
+.invalido input{
+  border-color: rgb(224, 73, 73);
+}
