@@ -80,24 +80,24 @@
             <h2 class="titulo">Dejanos tus datos y estaremos en contacto</h2>
 
           <div class="flex-column container">
-            <form class="contactoForm" action="#">
+            <form id= "form" class="contactoForm" action="https://formspree.io/f/mzbopznd" method="POST">
  
-                <div class="contactoInput flex-column"> 
-                    <label for="nombre" class="form-label">Nombre</label>  
-                 <input type="text" name="nombre" placeholder="Nombre" required>
+                <div class="contactoInput flex-column" id="grupo__nombre" > 
+                    <label for="nombre" class="form-label"  >Nombre</label>  
+                 <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                 </div>
 
 
-                <div class="contactoInput flex-column">
+                <div class="contactoInput flex-column" id="grupo__telefono">
                     <label for="number" class="form-label">Celular</label>  
 
-                    <input type="number" name="telefono" placeholder="Celular" required>
+                    <input type="number" name="telefono" id="telefono" placeholder="Celular" required>
                </div>
 
-                <div class="contactoInput flex-column">
+                <div class="contactoInput flex-column" id="grupo__email">
                     <label for="email" class="form-label">Email</label>  
 
-                     <input type="email" name="emial" id="emial" placeholder="Email" required>
+                     <input type="email" name="email" id="email" placeholder="Email" required>
                 </div>
 
               
@@ -167,5 +167,6 @@
     src="https://kit.fontawesome.com/aa037f8851.js"
     crossorigin="anonymous"
   ></script>
+  <script src="js/form.js"></script>
   </body>
 </html>
