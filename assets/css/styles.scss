@@ -186,12 +186,13 @@ button {
   color: var(--color-wood_5);
   border: none;
   font-size: clamp(1rem, 5vw, 1.875rem);
+  transition: font-weight 2s;
+  transition-timing-function: linear;
 }
 
 .btn_home:hover {
   font-weight: 800;
   background-color: var(--color-wood_3);
-  transition: all 2s ease;
 }
 
 //// Sections text and img ////
@@ -274,7 +275,7 @@ footer {
 
 .footer_inner h3 {
   color: #fff;
-  font-size: var(--text-medium);
+  font-size: clamp(30px, 4vh, var(--text-medium));
 }
 
 .h3_footer_left {
