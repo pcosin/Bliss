@@ -498,3 +498,24 @@ i {
 .invalido input{
   border-color: rgb(224, 73, 73);
 }
+
+#mensajeValido{
+  display: none;
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  color: rgb(129, 192, 36);
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+#mensajeInvalido{
+  display: none;
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  color: rgb(224, 73, 73);
+  text-align: center;
+
+
+}
