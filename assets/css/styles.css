@@ -501,4 +501,37 @@ i {
     font-size: 0.8rem;
   }
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=styles.css.map */
+=======
+/*# sourceMappingURL=styles.css.map */
+
+.valido input{
+  border-color: greenyellow;
+}
+
+.invalido input{
+  border-color: rgb(224, 73, 73);
+}
+
+#mensajeValido{
+  display: none;
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  color: rgb(129, 192, 36);
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+#mensajeInvalido{
+  display: none;
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  color: rgb(224, 73, 73);
+  text-align: center;
+
+
+}
+>>>>>>> db24d4900a64e4da6970a296eeb99eb03a51c7a0

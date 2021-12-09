@@ -4,6 +4,9 @@ const expresiones = {
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
+
+
+
 const $form = document.querySelector('#form')
 const $inputs = document.querySelectorAll('#form input')
 const campos = {
@@ -59,8 +62,12 @@ function handleSubmit(e){
     e.preventDefault()
     if(campos.nombre && campos.telefono && campos.email){
     susses();
-    }   
-
+    $('#mensajeInvalido').hide();
+    $('#mensajeValido').show();
+    }else{
+        $('#mensajeValido').hide();
+        $('#mensajeInvalido').show();
+    }
     async function susses(){
         const form = new FormData($form)
         const response= await fetch($form.action, { 
@@ -70,8 +77,10 @@ function handleSubmit(e){
                 'Accept': 'application/json'
             }
         })
-        if (response.ok)
+        if (response.ok){
         $form.reset();
-        alert('Gracias')
+        }else{
+            alert('Error con el servidor')
+        }
     }
 }
