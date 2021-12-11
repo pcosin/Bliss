@@ -394,8 +394,11 @@ button {
   margin-inline: auto;
   display: block;
   margin-top: 2rem;
-  color: var(--color-wood_5);
   border: 3px solid var(--color-wood_5);
+}
+
+.boton_productos a {
+  color: var(--color-wood_5);
 }
 
 .boton_productos:hover {
@@ -408,8 +411,11 @@ button {
   margin-inline: auto;
   display: block;
   margin-top: 2rem;
-  color: var(--color-wood_5);
   border: 3px solid var(--color-wood_5);
+}
+
+.boton_conocenos a {
+  color: var(--color-wood_5);
 }
 
 .boton_conocenos:hover {
@@ -495,6 +501,9 @@ i {
     font-size: 0.8rem;
   }
 }
+<<<<<<< HEAD
+/*# sourceMappingURL=styles.css.map */
+=======
 /*# sourceMappingURL=styles.css.map */
 
 .valido input{
@@ -525,3 +534,4 @@ i {
 
 
 }
+>>>>>>> db24d4900a64e4da6970a296eeb99eb03a51c7a0

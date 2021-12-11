@@ -240,8 +240,11 @@ button {
   margin-inline: auto;
   display: block;
   margin-top: 2rem;
-  color: var(--color-wood_5);
   border: 3px solid var(--color-wood_5);
+}
+
+.boton_productos a {
+  color: var(--color-wood_5);
 }
 
 .boton_productos:hover {
@@ -253,8 +256,11 @@ button {
   margin-inline: auto;
   display: block;
   margin-top: 2rem;
-  color: var(--color-wood_5);
   border: 3px solid var(--color-wood_5);
+}
+
+.boton_conocenos a {
+  color: var(--color-wood_5);
 }
 
 .boton_conocenos:hover {
