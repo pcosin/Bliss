@@ -35,8 +35,11 @@
 }
 
 .btn-catalogo {
-  color: var(--color-wood_5);
   border: none;
+}
+
+.btn-catalogo a {
+  color: var(--color-wood_5);
 }
 
 .btn-catalogo:hover {

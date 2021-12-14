@@ -183,11 +183,14 @@ button {
   bottom: 20px;
   left: 30px;
   background-color: #fff;
-  color: var(--color-wood_5);
   border: none;
   font-size: clamp(1rem, 5vw, 1.875rem);
   transition: font-weight 2s;
   transition-timing-function: linear;
+}
+
+.btn_home a {
+  color: var(--color-wood_5);
 }
 
 .btn_home:hover {
