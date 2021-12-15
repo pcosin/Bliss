@@ -491,6 +491,9 @@ i {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .img-logo {
+    max-width: 60%;
+  }
   .info-img-2 .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -499,6 +502,18 @@ i {
   }
   .img-side {
     padding-top: 2rem;
+  }
+  footer .container {
+    padding-inline: 0;
+  }
+  .flex-footer {
+    --gap: 0.5rem;
+  }
+  .flex-footer p {
+    font-size: 0.9rem;
+  }
+  .direccion {
+    font-size: 0.9rem;
   }
 }
 

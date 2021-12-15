@@ -330,12 +330,32 @@ i {
     flex-direction: column;
   }
 
+  .img-logo {
+    max-width: 60%;
+  }
+
   .info-img-2 .flex {
     flex-direction: column-reverse;
   }
 
   .img-side {
     padding-top: 2rem;
+  }
+
+  footer .container {
+    padding-inline: 0;
+  }
+
+  .flex-footer {
+    --gap: 0.5rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .direccion {
+    font-size: 0.9rem;
   }
 }
 
