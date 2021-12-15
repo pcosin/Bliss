@@ -481,6 +481,26 @@ i {
   margin: 0 auto;
 }
 
+#mensajeValido{
+  display: none;
+  text-align: center;
+  color: rgb(113, 175, 21);
+  
+}
+#mensajeInvalido{
+  display: none;
+  text-align: center;
+  color: rgb(165, 32, 32);
+}
+
+.valido input{
+  border-color: rgb(113, 175, 21);
+}
+
+.invalido input{
+  border-color: rgb(165, 32, 32);
+}
+
 @media screen and (max-width: 570px) {
   body {
     font-size: var(--text-mediaquery);
